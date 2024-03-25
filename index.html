@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Yuchen Hong</title>
   
@@ -18,18 +21,18 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Yuchen Hong (洪雨辰)</name>
+                <name>Yuchen Hong / 洪雨辰</name>
               </p>
-              <p>Yuchen Hong is a Ph.D. student in the <a href="http://ci.idm.pku.edu.cn/">Camera Intelligence Lab</a> of Peking University, supervised by <a href="https://scholar.google.com/citations?user=K1LjZxcAAAAJ&hl=en&oi=ao">Prof. Boxin Shi</a>. He received the B.E. degree from Beijing University of Posts and Telecommuications (BUPT) in 2020.
+              <p>Yuchen Hong is a Ph.D. candidate in the <a href="https://camera.pku.edu.cn/">Camera Intelligence Lab</a> of Peking University, supervised by <a href="https://scholar.google.com/citations?user=K1LjZxcAAAAJ&hl=en&oi=ao">Prof. Boxin Shi</a>. He received the B.E. degree from Beijing University of Posts and Telecommuications (BUPT) in 2020.
               </p>
               <p style="text-align:center">
                 <a href="mailto:yuchenhong.cn@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=ER8ZzjkAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/yuchen-hong">Github</a>
+                <a href="https://scholar.google.com/citations?user=ER8ZzjkAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/ychong-16ba73145/">Linked In</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/photo_300.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/circle-photo_300.jpg" class="hoverZoomLink"></a>
+            <td style="padding:2.5%;width:30%;max-width:40%">
+              <a href="images/hyc_photo_300.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/hyc_photo_300_circle.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -38,7 +41,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests include computational photography and computer vision.
+                My research interests include physics-/language-/diffusion-based image/video restoration.
               </p>
             </td>
           </tr>
@@ -46,12 +49,186 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+        <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <video width=100% height=100% muted autoplay loop>
+                  <source src="images/flicrr_t.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Light Flickering Guided Reflection Removal</papertitle>
+              </a>
+              <br>
+              <strong>Yuchen Hong<sup>#</sup></strong>, Yakun Chang<sup>#</sup>, Jinxiu Liang, Lei Ma, Tiejun Huang, Boxin Shi
+              <br>
+              <em>In submission</em>
+              <br>
+              <p></p>
+              <p>This paper investigates the problem of removing strong reflections from contaminated image sequences or videos by exploiting periodically varying <em>light flickering</em>.</p>
+            </td>
+          </tr>
+
+        <tr onmouseout="lirs_stop()" onmouseover="lirs_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lirs_image'>
+                  <img src='images/lirs_t.jpg' width="160"></div>
+                <img src='images/lirs_m.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function lirs_start() {
+                  document.getElementById('lirs_image').style.opacity = "1";
+                }
+
+                function lirs_stop() {
+                  document.getElementById('lirs_image').style.opacity = "0";
+                }
+                lirs_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Language-guided Image Reflection Separation</papertitle>
+              </a>
+              <br>
+              Haofeng Zhong<sup>#</sup>, <strong>Yuchen Hong<sup>#</sup></strong>, Shuchen Weng, Jinxiu Liang, Boxin Shi
+              <br>
+              <em>CVPR</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2402.11874">[arxiv]</a>
+              <p></p>
+              <p>This paper studies the problem of <em>language-guided reflection separation</em>, which aims at addressing the ill-posed reflection separation problem by introducing language descriptions to provide layer content information.</p>
+            </td>
+          </tr>
+
+
+        <tr onmouseout="par2net_stop()" onmouseover="par2net_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='par2net_image'>
+                  <img src='images/par2net_t.jpg' width="160"></div>
+                <img src='images/par2net_m.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function par2net_start() {
+                  document.getElementById('par2net_image').style.opacity = "1";
+                }
+
+                function par2net_stop() {
+                  document.getElementById('par2net_image').style.opacity = "0";
+                }
+                par2net_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>PAR<sup>2</sup>Net: End-to-end Panoramic Image Reflection Removal</papertitle>
+              </a>
+              <br>
+              <strong>Yuchen Hong</strong>, Qian Zheng, Lingran Zhao, Xudong Jiang, Alex C. Kot, Boxin Shi
+              <br>
+              <em>TPAMI</em>, 2023
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10153662/">[paper]</a> [code] [dataset]
+              <p></p>
+              <p>This paper proposes the <em>first end-to-end panoramic image reflection removal framework</em>, aiming at reliving the content ambiguity between reflection and transmission scenes.</p>
+            </td>
+          </tr>
+
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/SIR2+.jpg' width="160">
+              </div>
+            </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Benchmarking Single-Image Reflection Removal Algorithms</papertitle>
+              </a>
+              <br>
+              Renjie Wan, Boxin Shi, Haoliang Li, <strong>Yuchen Hong</strong>, Ling-Yu Duan, Alex C. Kot
+              <br>
+              <em>TPAMI</em>, 2023
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9760117/">[paper]</a>
+              <a href="https://sir2data.github.io/">[project page]</a>
+              <p></p>
+            <p>This paper proposes the <em>SIR2<sup>+</sup> benchmark dataset</em> with a large number and a great diversity of mixture images, and ground truth of background and reflection.</p>
+            </td>
+          </tr>
+
+        <tr onmouseout="spkhdr_stop()" onmouseover="spkhdr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='spkhdr_image'>
+                  <img src='images/spike_hdr_o.jpg' width="160" height="160"></div>
+                <img src='images/spike_hdr_i.jpg' width="160" height="160">
+              </div>
+              <script type="text/javascript">
+                function spkhdr_start() {
+                  document.getElementById('spkhdr_image').style.opacity = "1";
+                }
+
+                function spkhdr_stop() {
+                  document.getElementById('spkhdr_image').style.opacity = "0";
+                }
+                spkhdr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>1000 FPS HDR Video With a Spike-RGB Hybrid Camera</papertitle>
+              </a>
+              <br>
+
+              Yakun Chang, Chu Zhou, <strong>Yuchen Hong</strong>, Liwen Hu, Chao Xu, Tiejun Huang, Boxin Shi
+              <br>
+              <em>CVPR</em>, 2023
+              <br>
+              <a href="http://openaccess.thecvf.com/content/CVPR2023/html/Chang_1000_FPS_HDR_Video_With_a_Spike-RGB_Hybrid_Camera_CVPR_2023_paper.html">[paper]</a>
+              <p></p>
+              <p>This paper studies the problem of recovering <em>high frame rate (HFR)</em> and <em>high dynamic range (HDR)</em> color videos from a hybrid camera system composed of a spiking and an alternating-exposure RGB camera.</p>
+            </td>
+          </tr>
+
+        <tr onmouseout="nir3net_stop()" onmouseover="nir3net_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nir3net_image'>
+                  <img src='images/nir3net_t.jpg' width="160" height="160"></div>
+                <img src='images/nir3net_m.jpg' width="160" height="160">
+              </div>
+              <script type="text/javascript">
+                function nir3net_start() {
+                  document.getElementById('nir3net_image').style.opacity = "1";
+                }
+
+                function nir3net_stop() {
+                  document.getElementById('nir3net_image').style.opacity = "0";
+                }
+                nir3net_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Reflection Removal with NIR and RGB Image Feature Fusion</papertitle>
+              </a>
+              <br>
+              <strong>Yuchen Hong</strong>, Youwei Lyu, Si Li, Gang Cao, and Boxin Shi
+              <br>
+              <em>TMM</em>, 2022
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9930653/">[paper]</a> [code] [dataset]
+              <p></p>
+
+              <p>This paper proposes the <em>NIR and RGB feature fused Reflection Removal Network (NIR<sup>3</sup>Net)</em> to utilize auxiliary information in active NIR images.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="panorr_stop()" onmouseover="panorr_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='pano_image'>
-                  <img src='images/pano_after.jpg' width="160"></div>
-                <img src='images/pano_before.jpg' width="160">
+                  <img src='images/pano_t.jpg' width="160"></div>
+                <img src='images/pano_m.jpg' width="160">
               </div>
               <script type="text/javascript">
                 function panorr_start() {
@@ -70,11 +247,11 @@
               <br>
               <strong>Yuchen Hong*</strong>, Qian Zheng*, Lingran Zhao, Xudong Jiang, Alex C. Kot, Boxin Shi
               <br>
-              <em>CVPR </em>, 2021
+              <em>CVPR</em>, 2021
               <br>
-              <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Hong_Panoramic_Image_Reflection_Removal_CVPR_2021_paper.html">paper</a>
+              [<a href="https://openaccess.thecvf.com/content/CVPR2021/html/Hong_Panoramic_Image_Reflection_Removal_CVPR_2021_paper.html">paper</a>] [dataset]
               <p></p>
-              <p>This paper studies the problem of panoramic image reflection removal, aiming at reliving the content ambiguity between reflection and transmission scenes.</p>
+              <p>This paper studies the problem of <em>panoramic image reflection removal</em>, aiming at reliving the content ambiguity between reflection and transmission scenes.</p>
             </td>
           </tr>
 
@@ -82,8 +259,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='nir2_image'>
-                  <img src='images/nir2_after_300.jpg' width="160"></div>
-                <img src='images/nir2_before_300.jpg' width="160">
+                  <img src='images/nir2net_t.jpg' width="160" height="160"></div>
+                <img src='images/nir2net_m.jpg' width="160" height="160">
               </div>
               <script type="text/javascript">
                 function nir2_start() {
@@ -102,11 +279,11 @@
               <br>
               <strong>Yuchen Hong</strong>, Youwei Lyu, Si Li, Boxin Shi
               <br>
-              <em>ICME </em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <em>ICME</em>, 2020 &nbsp <strong>(Oral Presentation)</strong>
               <br>
-              <a href="https://ieeexplore.ieee.org/abstract/document/9102937">paper</a>
+              [<a href="https://ieeexplore.ieee.org/abstract/document/9102937">paper</a>] [dataset]
               <p></p>
-              <p>This paper proposes a two-stream neural network to remove undesired reflections in an RGB image with the guidance of an NIR image.</p>
+              <p>This paper proposes a <em>Near-infrared Image guided Reflection Removal Network (NIR<sup>2</sup>Net)</em> to remove undesired reflections in an RGB image with the guidance of an NIR image.</p>
             </td>
           </tr>
 
